@@ -9,6 +9,10 @@
 
 export文以外をコピペするか、jsDelivrなどを経由してES Moduleとしてインポートすることでも使えます。
 
+```js
+import Deque from 'https://cdn.jsdelivr.net/gh/AXT-AyaKoto/Algos.js/structures/deque/main.mjs';
+```
+
 ## Methods
 
 - `Deque()` - Dequeのインスタンスを生成
