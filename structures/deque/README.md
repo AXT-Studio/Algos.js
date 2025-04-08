@@ -11,6 +11,12 @@ export文以外をコピペするか、jsDelivrなどを経由してES Moduleと
 
 ## Methods
 
+- `Deque()` - Dequeのインスタンスを生成
+    - 引数:
+        - `array: any[]` - 初期値
+            - 省略可能。配列以外が指定された場合は空のDequeが生成される。
+            - 例: `[1, 2, 3]` の場合、Dequeは `1, 2, 3` の順に要素を持つ
+    - 返り値: `Deque` - Dequeのインスタンス
 - `push_head(value)` - 先頭に値を挿入
     - 引数:
         - `value: any` - 挿入する値

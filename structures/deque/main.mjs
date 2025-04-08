@@ -25,14 +25,22 @@
 const Deque = class Deque {
     /**
      * Deque() コンストラクター
+     * @param {any[]} array - 初期値の配列
+     * @constructor
      */
-    constructor() {
+    constructor(array) {
         /** @type {DequeNode|null} */
         this.head = null;
         /** @type {DequeNode|null} */
         this.tail = null;
         /** @type {number} */
         this.size = 0;
+        // arrayが与えられていたら、array.pop()したものをheadに入れる作業を繰り返す
+        if (Array.isArray(array)) {
+            while (array.length > 0) {
+                this.push_head(array.pop());
+            }
+        }
     }
     /**
      * 先頭に値を挿入するメソッド
