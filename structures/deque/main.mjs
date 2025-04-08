@@ -160,3 +160,6 @@ const Deque = class Deque {
         return result;
     }
 };
+
+/** @description ES Moduleとしてexport */
+export { Deque };
