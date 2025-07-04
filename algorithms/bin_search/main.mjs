@@ -9,6 +9,10 @@
  * @returns {number | undefined} - 探したい要素"以下"と判定されるもののうち最も後ろにある要素のindex。(arrayの全要素がtargetより大きい場合は-1、needEqualityがtrueかつtargetと等しい要素がない場合はundefined。)
  */
 const bin_findIndexLE = (array, target, compareFn = ((a, b) => { const [A, B] = [String(a), String(b)]; return (A < B) ? -1 : (A > B) ? 1 : 0 }), needEquality = false) => {
+    if (array.length === 0) {
+        return undefined;
+    }
+
     let low = 0;
     let high = array.length - 1;
     let result = -1;
@@ -39,6 +43,10 @@ const bin_findIndexLE = (array, target, compareFn = ((a, b) => { const [A, B] = 
  * @returns {any | undefined} - 探したい要素"以下"と判定されるもののうち最も後ろにある要素そのもの。(arrayの全要素がtargetより大きい場合はundefined、needEqualityがtrueかつtargetと等しい要素がない場合はundefined。)
  */
 const bin_findLE = (array, target, compareFn = ((a, b) => { const [A, B] = [String(a), String(b)]; return (A < B) ? -1 : (A > B) ? 1 : 0 }), needEquality = false) => {
+    if (array.length === 0) {
+        return undefined;
+    }
+
     let low = 0;
     let high = array.length - 1;
     let result = undefined;

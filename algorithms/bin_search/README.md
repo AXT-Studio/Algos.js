@@ -34,6 +34,7 @@ import { bin_findLE, bin_findIndexLE } from 'https://cdn.jsdelivr.net/gh/AXT-Aya
         - 探したい要素"以下"と判定されるもののうち最も後ろにある**要素そのもの**です。
         - `array`のすべての要素が`target`より大きい場合は`undefined`を返します。
         - `needEquality`が`true`のとき、`target`と等しい要素がない場合は`undefined`を返します。
+        - `array`が空配列の場合は、`target`や`needEquality`に関わらず`undefined`を返します。
 - `bin_findIndexLE(array, target, compareFn, needEquality)`: `number | undefined` - 二分探索を行い、結果のindexを返す。
     - 引数:
         - `array: any[]`
@@ -53,6 +54,7 @@ import { bin_findLE, bin_findIndexLE } from 'https://cdn.jsdelivr.net/gh/AXT-Aya
         - 探したい要素"以下"と判定されるもののうち最も後ろにある**要素のindex**です。
         - `array`のすべての要素が`target`より大きい場合は`-1`を返します。
         - `needEquality`が`true`のとき、`target`と等しい要素がない場合は`undefined`を返します。
+        - `array`が空配列の場合は、`target`や`needEquality`に関わらず`undefined`を返します。
 
 ## Example
 
