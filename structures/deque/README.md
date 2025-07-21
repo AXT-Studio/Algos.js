@@ -15,13 +15,13 @@ export文以外をコピペするか、jsDelivrなどを経由してES Moduleと
 ### 「2つの配列」方式
 
 ```js
-import { Deque } from 'https://cdn.jsdelivr.net/gh/AXT-AyaKoto/Algos.js/structures/deque/TwoArray.mjs';
+import { Deque } from 'https://cdn.jsdelivr.net/gh/AXT-Studio/Algos.js/structures/deque/TwoArray.mjs';
 ```
 
 ### 「双方向連結リスト」方式
 
 ```js
-import { Deque } from 'https://cdn.jsdelivr.net/gh/AXT-AyaKoto/Algos.js/structures/deque/DoublyLinkedList.mjs';
+import { Deque } from 'https://cdn.jsdelivr.net/gh/AXT-Studio/Algos.js/structures/deque/DoublyLinkedList.mjs';
 ```
 
 ## Methods
@@ -80,10 +80,10 @@ import { Deque } from 'https://cdn.jsdelivr.net/gh/AXT-AyaKoto/Algos.js/structur
 ## Example
 
 ```js
-import { Deque } from 'https://cdn.jsdelivr.net/gh/AXT-AyaKoto/Algos.js/structures/deque/TwoArray.mjs';
+import { Deque } from 'https://cdn.jsdelivr.net/gh/AXT-Studio/Algos.js/structures/deque/TwoArray.mjs';
 /*
 「双方向連結リスト」方式を使う場合は以下の通り
-import { Deque } from 'https://cdn.jsdelivr.net/gh/AXT-AyaKoto/Algos.js/structures/deque/DoublyLinkedList.mjs';
+import { Deque } from 'https://cdn.jsdelivr.net/gh/AXT-Studio/Algos.js/structures/deque/DoublyLinkedList.mjs';
 */
 // Dequeクラスのインスタンスを作成（初期値あり）
 const deque = new Deque(['B', 'C']);

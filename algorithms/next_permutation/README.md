@@ -12,7 +12,7 @@ C++の`next_permutation`、Pythonの`itertools.permutations`に相当します�
 export文以外をコピペするか、jsDelivrなどを経由してES Moduleとしてインポートすることでも使えます。
 
 ```js
-import { nextPermutation } from 'https://cdn.jsdelivr.net/gh/AXT-AyaKoto/Algos.js/algorithms/next_permutation/main.mjs';
+import { nextPermutation } from 'https://cdn.jsdelivr.net/gh/AXT-Studio/Algos.js/algorithms/next_permutation/main.mjs';
 ```
 
 ## Methods
@@ -36,7 +36,7 @@ import { nextPermutation } from 'https://cdn.jsdelivr.net/gh/AXT-AyaKoto/Algos.j
 ## Example
 
 ```js
-import { nextPermutation } from 'https://cdn.jsdelivr.net/gh/AXT-AyaKoto/Algos.js/algorithms/next_permutation/main.mjs';
+import { nextPermutation } from 'https://cdn.jsdelivr.net/gh/AXT-Studio/Algos.js/algorithms/next_permutation/main.mjs';
 const array = [1, 2, 3];
 const permutations = nextPermutation(array);
 for (const perm of permutations) {
