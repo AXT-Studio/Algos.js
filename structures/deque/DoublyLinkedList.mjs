@@ -145,7 +145,7 @@ const Deque = class Deque {
      * @returns {any|undefined} - 末尾の値、またはundefined (空の場合)
      */
     last() {
-        // やるだけ
+        // 末尾要素の値を返す
         return this.#tail !== null ? this.#tail.value : undefined;
     }
     /**
