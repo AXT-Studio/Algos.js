@@ -10,7 +10,7 @@
 export文以外をコピペするか、jsDelivrなどを経由してES Moduleとしてインポートすることでも使えます。
 
 ```js
-import { bin_findLE, bin_findIndexLE } from 'https://cdn.jsdelivr.net/gh/AXT-AyaKoto/Algos.js/algorithms/bin_search/main.mjs';
+import { bin_findLE, bin_findIndexLE } from 'https://cdn.jsdelivr.net/gh/AXT-Studio/Algos.js/algorithms/bin_search/main.mjs';
 ```
 
 ## Methods
@@ -59,7 +59,7 @@ import { bin_findLE, bin_findIndexLE } from 'https://cdn.jsdelivr.net/gh/AXT-Aya
 ## Example
 
 ```js
-import { bin_findLE, bin_findIndexLE } from 'https://cdn.jsdelivr.net/gh/AXT-AyaKoto/Algos.js/algorithms/bin_search/main.mjs';
+import { bin_findLE, bin_findIndexLE } from 'https://cdn.jsdelivr.net/gh/AXT-Studio/Algos.js/algorithms/bin_search/main.mjs';
 
 const array = [2, 3, 5, 7, 11];
 const compareFn = (a, b) => a - b; // 数値を昇順にソートする比較関数
