@@ -132,3 +132,5 @@ const Deque = class Deque {
         return this.#front.length + this.#back.length;
     }
 };
+
+export { Deque };
