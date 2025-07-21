@@ -2,6 +2,8 @@
 
 ## Overview
 
+## Overview
+
 「配列の要素を並び替えたもの」を全て列挙するためのジェネレーター関数です。
 C++の`next_permutation`、Pythonの`itertools.permutations`に相当します。
 
@@ -24,6 +26,12 @@ import { nextPermutation } from 'https://cdn.jsdelivr.net/gh/AXT-AyaKoto/Algos.j
         - 元の配列の順列を生成するジェネレーターです。
         - `next()`メソッドを呼び出すことで、辞書順で次の順列を取得できます。
         - `for...of`ループで使用することもできます。
+
+## Time Complexity
+
+| Method | Time Complexity | Appendix |
+|--------|-----------------|----------|
+| `next_permutation()` | $O(N \times N!)$ | 各順列生成が$O(N)$、列挙する順列数が$N!$ |
 
 ## Example
 
