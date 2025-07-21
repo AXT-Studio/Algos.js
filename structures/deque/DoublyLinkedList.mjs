@@ -137,7 +137,7 @@ const Deque = class Deque {
      * @returns {any|undefined} - 先頭の値、またはundefined (空の場合)
      */
     first() {
-        // やるだけ
+        // 先頭要素の値を返す (Dequeが空の場合はundefinedを返す)
         return this.#head !== null ? this.#head.value : undefined;
     }
     /**
