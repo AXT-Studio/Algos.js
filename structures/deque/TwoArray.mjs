@@ -135,4 +135,3 @@ const Deque = class Deque {
 
 export { Deque };
 
-export { Deque };
