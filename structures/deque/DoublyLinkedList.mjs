@@ -179,3 +179,5 @@ const Deque = class Deque {
         return this.#size;
     }
 };
+
+export { Deque };
