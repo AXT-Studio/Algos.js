@@ -50,3 +50,17 @@ import { Deque } from 'https://cdn.jsdelivr.net/gh/AXT-AyaKoto/Algos.js/structur
 - `to_array()` - Dequeを配列に変換
     - 引数: なし
     - 返り値: `any[]` - 変換後の配列
+
+## Time Complexity
+
+| Method | Time Complexity | Appendix |
+|--------|-----------------|----------|
+| `push_head()` | $O(1)$ |  |
+| `push_tail()` | $O(1)$ |  |
+| `pop_head()` | $O(1)$ |  |
+| `pop_tail()` | $O(1)$ |  |
+| `peek_head()` | $O(1)$ |  |
+| `peek_tail()` | $O(1)$ |  |
+| `is_empty()` | $O(1)$ |  |
+| `get_size()` | $O(1)$ |  |
+| `to_array()` | $O(N)$ | NはDequeの要素数 |
