@@ -112,7 +112,7 @@ const Deque = class Deque {
     }
     /**
      * 末尾の値を削除して返す
-     * @returns {any|undefined} - 先頭の値、またはundefined (空の場合)
+     * @returns {any|undefined} - 末尾の値、またはundefined (空の場合)
      */
     pop() {
         if (this.#tail === null) {
