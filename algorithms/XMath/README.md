@@ -16,16 +16,18 @@ import { XMath } from 'https://cdn.jsdelivr.net/gh/AXT-Studio/Algos.js/algorithm
 
 ### 最大公約数・最小公倍数
 
-- `gcd(a: (number|bigint), b: (number|bigint)): (number|bigint)` - 2つの整数の最大公約数を求めます。
+> `T`は`(number|bigint)`です。
+
+- `gcd(a: T, b: T): T` - 2つの整数の最大公約数を求めます。
     - 引数:
-        - `a: number|bigint` - 整数
-        - `b: number|bigint` - 整数
-    - 返り値: `number|bigint` - 最大公約数
-- `lcm(a: (number|bigint), b: (number|bigint)): (number|bigint)` - 2つの整数の最小公倍数を求めます。
+        - `a: T` - 整数
+        - `b: T` - 整数
+    - 返り値: `T` - 最大公約数
+- `lcm(a: T, b: T): T` - 2つの整数の最小公倍数を求めます。
     - 引数:
-        - `a: number|bigint` - 整数
-        - `b: number|bigint` - 整数
-    - 返り値: `number|bigint` - 最小公倍数
+        - `a: T` - 整数
+        - `b: T` - 整数
+    - 返り値: `T` - 最小公倍数
 
 | Method | Time Complexity | Appendix |
 |--------|-----------------|----------|

@@ -66,6 +66,7 @@ const XMath = class XMath {
      */
     static lcm(a, b) {
         if (a === 0 || b === 0) return /** @type {T} */ (0);
+        if (a === 0n || b === 0n) return /** @type {T} */ (0n);
         return /** @type {T} */ ((a * b) / XMath.gcd(a, b));
     }
 };
