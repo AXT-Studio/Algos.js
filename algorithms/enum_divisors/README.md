@@ -32,8 +32,9 @@ import { getDivisors } from 'https://cdn.jsdelivr.net/gh/AXT-Studio/Algos.js/alg
 | `getDivisors()` | $O(\sqrt{n})$ | (※1) |
 
 ※1: 時間計算量について
-- 約数はペアで発見することができるため、探索は$\sqrt{N}$までで十分となります。
-- 昇順並び替えも"反転して結合"は$O(\sqrt{N})$で行えるため、全体の時間計算量は$O(\sqrt{N})$となります。
+- 約数はペアで発見することができるため、探索は$\sqrt{n}$までで十分となります。
+- 昇順並び替えも$O(\sqrt{n})$で行えるため、全体の時間計算量は$O(\sqrt{n})$となります。
+    - $\sqrt{n}$以上の約数は逆順で列挙されているため、逆順にして結合すれば良いです。これは$O(\sqrt{n})$で行えます。
 
 ## Example
 
