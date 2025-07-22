@@ -1,5 +1,5 @@
 /** ================================================================================================
- * AXT-Studio/Algos.js - algorithms - main.mjs
+ * AXT-Studio/Algos.js - algorithms/enum_divisors - main.mjs
  * ------------------------------------------------------------------------------------------------
  * 整数の約数を列挙するアルゴリズムを提供します。
 ================================================================================================= */
@@ -29,9 +29,8 @@ const getDivisors = (n) => {
         }
     }
     // smallDivisorsにlargeDivisorsの逆順を追加して返す。
-    while (largeDivisors.length > 0) {
-        smallDivisors.push(/** @type {number} */(largeDivisors.pop()));
-    }
+    largeDivisors.reverse();
+    smallDivisors.push(...largeDivisors);
     return smallDivisors;
 };
 

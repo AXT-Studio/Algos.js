@@ -33,5 +33,14 @@ import { getDivisors } from 'https://cdn.jsdelivr.net/gh/AXT-Studio/Algos.js/alg
 
 ※1: 時間計算量について
 - 約数はペアで発見することができるため、探索は$\sqrt{N}$までで十分となります。
-- 昇順並び替えは`Array.prototype.pop()`と`Array.prototype.push()`で$\sqrt{N}$以上の約数を順に移動する形で行います。
-    - 1回の移動が$O(1)$、移動する約数の個数は$\sqrt{N}$個以下なので、$O(\sqrt{N})$で抑えることができます。
+- 昇順並び替えも"反転して結合"は$O(\sqrt{N})$で行えるため、全体の時間計算量は$O(\sqrt{N})$となります。
+
+## Example
+
+```js
+import { getDivisors } from 'https://cdn.jsdelivr.net/gh/AXT-Studio/Algos.js/algorithms/enum_divisors/main.mjs';
+console.log(getDivisors(12)); // Expected Output: [1, 2, 3, 4, 6, 12]
+console.log(getDivisors(1)); // Expected Output: [1]
+console.log(getDivisors(0)); // Expected Output: []
+console.log(getDivisors(-5)); // Expected Output: []
+```
