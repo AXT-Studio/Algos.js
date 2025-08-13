@@ -20,6 +20,9 @@ const UniqueIDs = class {
         if (typeof timestamp !== 'number' || !Number.isInteger(timestamp)) {
             throw new TypeError('Timestamp must be an integer.');
         }
+        if (timestamp < 0 || timestamp > 0xFFFFFFFFFFFF) {
+            throw new RangeError('Timestamp must be a non-negative integer not greater than 281474976710655 (48 bits).');
+        }
 
         // 1. 128ビットのランダムな値を用意
         const randomBytes = new Uint8Array(16);
