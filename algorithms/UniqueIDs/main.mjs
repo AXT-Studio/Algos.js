@@ -41,7 +41,7 @@ const UniqueIDs = class {
             (randomBigInt & RANDOM_PART_MASK) // ランダム部分
         );
         // UUIDv7文字列を生成する (8文字-4文字-4文字-4文字-12文字の形式)
-        return uuidBigInt.toString(16).padStart(32, '0').replace(/(.{8})(.{4})(.{4})(.{4})(.{12})/, '$1-$2-$3-$4-$5');
+        return uuidBigInt.toString(16).padStart(32, '0').replace(/(.{8})(.{4})(.{4})(.{4})(.{12})/, '$1-$2-$3-$4-$5').toLowerCase();
     }
 };
 
