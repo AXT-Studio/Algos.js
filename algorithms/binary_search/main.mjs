@@ -71,7 +71,7 @@ const lower_bound = (array, target, compareFn = DEFAULT_COMPARE_FN) => {
  *
  * @param {any[]} array - ソート済みの配列
  * @param {any} target - 探索する値
- * @param {(a: any, b: any) => number} [compareFn] - 比較関数。指定しなかった場合のデフォルト値は、`(a, b) => { const [A, B] = [String(a), String(b)]; return (A < B) ? -1 : (A > B) ? 1 : 0 }`です。
+ * @param {(a: any, b: any) => number} [compareFn] - 比較関数。指定しなかった場合のデフォルト値はArray#sort()でのデフォルトの挙動と同じ。
  * @returns {number} `target`より大きい最小のインデックス。`array`内に`target`より大きい要素が存在しない場合は`array.length`を返します。
  */
 const upper_bound = (array, target, compareFn = DEFAULT_COMPARE_FN) => {
